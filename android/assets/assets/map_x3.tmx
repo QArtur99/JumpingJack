@@ -1,0 +1,1045 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.6" orientation="orthogonal" renderorder="right-down" width="300" height="20" tilewidth="32" tileheight="32" infinite="0" nextobjectid="527">
+ <tileset firstgid="1" name="platform-tileset" tilewidth="32" tileheight="32" tilecount="18" columns="6">
+  <image source="platform-tileset.png" width="192" height="96"/>
+ </tileset>
+ <tileset firstgid="19" source="object-tileset.tsx"/>
+ <tileset firstgid="26" source="platform.tsx"/>
+ <tileset firstgid="27" name="object-set2" tilewidth="32" tileheight="32" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <properties>
+   <property name="name" value="Bonus"/>
+  </properties>
+  <tile id="1">
+   <properties>
+    <property name="name" value="Bonus"/>
+   </properties>
+   <image width="32" height="32" source="items/gem2.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="29" name="water3" tilewidth="96" tileheight="32" tilecount="72" columns="6">
+  <image source="wateranimate2.png" width="576" height="386"/>
+  <tile id="0">
+   <properties>
+    <property name="idd" value="1"/>
+    <property name="name" value="Waterfall"/>
+   </properties>
+   <animation>
+    <frame tileid="0" duration="150"/>
+    <frame tileid="1" duration="150"/>
+    <frame tileid="2" duration="150"/>
+    <frame tileid="3" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="1">
+   <animation>
+    <frame tileid="1" duration="100"/>
+    <frame tileid="7" duration="100"/>
+    <frame tileid="13" duration="100"/>
+    <frame tileid="19" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="idd" value="2"/>
+    <property name="name" value="Waterfall"/>
+   </properties>
+   <animation>
+    <frame tileid="6" duration="150"/>
+    <frame tileid="7" duration="150"/>
+    <frame tileid="8" duration="150"/>
+    <frame tileid="9" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="7">
+   <animation>
+    <frame tileid="7" duration="100"/>
+    <frame tileid="13" duration="100"/>
+    <frame tileid="19" duration="100"/>
+    <frame tileid="1" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="12">
+   <properties>
+    <property name="idd" value="3"/>
+    <property name="name" value="Waterfall"/>
+   </properties>
+   <animation>
+    <frame tileid="12" duration="150"/>
+    <frame tileid="13" duration="150"/>
+    <frame tileid="14" duration="150"/>
+    <frame tileid="15" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="13">
+   <animation>
+    <frame tileid="19" duration="100"/>
+    <frame tileid="1" duration="100"/>
+    <frame tileid="7" duration="100"/>
+    <frame tileid="13" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="18">
+   <properties>
+    <property name="idd" value="4"/>
+    <property name="name" value="Waterfall"/>
+   </properties>
+   <animation>
+    <frame tileid="18" duration="150"/>
+    <frame tileid="19" duration="150"/>
+    <frame tileid="20" duration="150"/>
+    <frame tileid="21" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="19">
+   <animation>
+    <frame tileid="19" duration="100"/>
+    <frame tileid="1" duration="100"/>
+    <frame tileid="7" duration="100"/>
+    <frame tileid="13" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="24">
+   <properties>
+    <property name="idd" value="5"/>
+    <property name="name" value="Waterfall"/>
+   </properties>
+   <animation>
+    <frame tileid="24" duration="150"/>
+    <frame tileid="25" duration="150"/>
+    <frame tileid="26" duration="150"/>
+    <frame tileid="27" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="30">
+   <properties>
+    <property name="idd" value="6"/>
+    <property name="name" value="Waterfall"/>
+   </properties>
+   <animation>
+    <frame tileid="30" duration="150"/>
+    <frame tileid="31" duration="150"/>
+    <frame tileid="32" duration="150"/>
+    <frame tileid="33" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="42">
+   <animation>
+    <frame tileid="42" duration="100"/>
+    <frame tileid="43" duration="100"/>
+    <frame tileid="44" duration="100"/>
+    <frame tileid="45" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="48">
+   <animation>
+    <frame tileid="48" duration="100"/>
+    <frame tileid="49" duration="100"/>
+    <frame tileid="50" duration="100"/>
+    <frame tileid="51" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="54">
+   <animation>
+    <frame tileid="54" duration="100"/>
+    <frame tileid="55" duration="100"/>
+    <frame tileid="56" duration="100"/>
+    <frame tileid="57" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="60">
+   <animation>
+    <frame tileid="60" duration="100"/>
+    <frame tileid="61" duration="100"/>
+    <frame tileid="62" duration="100"/>
+    <frame tileid="63" duration="100"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="101" name="platformer-art" tilewidth="32" tileheight="154" tilecount="174" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="32" height="32" source="platformer_art/box kopia.png"/>
+  </tile>
+  <tile id="1">
+   <image width="32" height="32" source="platformer_art/boxAlt kopia.png"/>
+  </tile>
+  <tile id="2">
+   <image width="32" height="32" source="platformer_art/boxCoin kopia.png"/>
+  </tile>
+  <tile id="3">
+   <image width="32" height="32" source="platformer_art/boxCoin_disabled kopia.png"/>
+  </tile>
+  <tile id="4">
+   <image width="32" height="32" source="platformer_art/boxCoinAlt kopia.png"/>
+  </tile>
+  <tile id="5">
+   <image width="32" height="32" source="platformer_art/boxCoinAlt_disabled kopia.png"/>
+  </tile>
+  <tile id="6">
+   <image width="32" height="32" source="platformer_art/boxEmpty kopia.png"/>
+  </tile>
+  <tile id="7">
+   <image width="32" height="32" source="platformer_art/boxExplosive kopia.png"/>
+  </tile>
+  <tile id="8">
+   <image width="32" height="32" source="platformer_art/boxExplosive_disabled kopia.png"/>
+  </tile>
+  <tile id="9">
+   <image width="32" height="32" source="platformer_art/boxExplosiveAlt kopia.png"/>
+  </tile>
+  <tile id="10">
+   <image width="32" height="32" source="platformer_art/boxItem kopia.png"/>
+  </tile>
+  <tile id="11">
+   <image width="32" height="32" source="platformer_art/boxItem_disabled kopia.png"/>
+  </tile>
+  <tile id="12">
+   <image width="32" height="32" source="platformer_art/boxItemAlt kopia.png"/>
+  </tile>
+  <tile id="13">
+   <image width="32" height="32" source="platformer_art/boxItemAlt_disabled kopia.png"/>
+  </tile>
+  <tile id="14">
+   <image width="32" height="32" source="platformer_art/boxWarning kopia.png"/>
+  </tile>
+  <tile id="15">
+   <image width="32" height="32" source="platformer_art/brickWall kopia.png"/>
+  </tile>
+  <tile id="16">
+   <image width="32" height="32" source="platformer_art/bridge kopia.png"/>
+  </tile>
+  <tile id="17">
+   <image width="32" height="32" source="platformer_art/bridgeLogs kopia.png"/>
+  </tile>
+  <tile id="18">
+   <image width="32" height="32" source="platformer_art/castle kopia.png"/>
+  </tile>
+  <tile id="19">
+   <image width="32" height="32" source="platformer_art/castleCenter kopia.png"/>
+  </tile>
+  <tile id="20">
+   <image width="32" height="32" source="platformer_art/castleCenter_rounded kopia.png"/>
+  </tile>
+  <tile id="21">
+   <image width="32" height="32" source="platformer_art/castleCliffLeft kopia.png"/>
+  </tile>
+  <tile id="22">
+   <image width="32" height="32" source="platformer_art/castleCliffLeftAlt kopia.png"/>
+  </tile>
+  <tile id="23">
+   <image width="32" height="32" source="platformer_art/castleCliffRight kopia.png"/>
+  </tile>
+  <tile id="24">
+   <image width="32" height="32" source="platformer_art/castleCliffRightAlt kopia.png"/>
+  </tile>
+  <tile id="25">
+   <image width="32" height="32" source="platformer_art/castleHalf kopia.png"/>
+  </tile>
+  <tile id="26">
+   <image width="32" height="32" source="platformer_art/castleHalfLeft kopia.png"/>
+  </tile>
+  <tile id="27">
+   <image width="32" height="32" source="platformer_art/castleHalfMid kopia.png"/>
+  </tile>
+  <tile id="28">
+   <image width="32" height="32" source="platformer_art/castleHalfRight kopia.png"/>
+  </tile>
+  <tile id="29">
+   <image width="32" height="32" source="platformer_art/castleHillLeft kopia.png"/>
+  </tile>
+  <tile id="30">
+   <image width="32" height="32" source="platformer_art/castleHillLeft2 kopia.png"/>
+  </tile>
+  <tile id="31">
+   <image width="32" height="32" source="platformer_art/castleHillRight kopia.png"/>
+  </tile>
+  <tile id="32">
+   <image width="32" height="32" source="platformer_art/castleHillRight2 kopia.png"/>
+  </tile>
+  <tile id="33">
+   <image width="32" height="141" source="platformer_art/castleLedgeLeft kopia.png"/>
+  </tile>
+  <tile id="34">
+   <image width="32" height="141" source="platformer_art/castleLedgeRight kopia.png"/>
+  </tile>
+  <tile id="35">
+   <image width="32" height="32" source="platformer_art/castleLeft kopia.png"/>
+  </tile>
+  <tile id="36">
+   <image width="32" height="32" source="platformer_art/castleMid kopia.png"/>
+  </tile>
+  <tile id="37">
+   <image width="32" height="32" source="platformer_art/castleRight kopia.png"/>
+  </tile>
+  <tile id="38">
+   <image width="32" height="32" source="platformer_art/dirt kopia.png"/>
+  </tile>
+  <tile id="39">
+   <image width="32" height="32" source="platformer_art/dirtCenter kopia.png"/>
+  </tile>
+  <tile id="40">
+   <image width="32" height="32" source="platformer_art/dirtCenter_rounded kopia.png"/>
+  </tile>
+  <tile id="41">
+   <image width="32" height="32" source="platformer_art/dirtCliffLeft kopia.png"/>
+  </tile>
+  <tile id="42">
+   <image width="32" height="32" source="platformer_art/dirtCliffLeftAlt kopia.png"/>
+  </tile>
+  <tile id="43">
+   <image width="32" height="32" source="platformer_art/dirtCliffRight kopia.png"/>
+  </tile>
+  <tile id="44">
+   <image width="32" height="32" source="platformer_art/dirtCliffRightAlt kopia.png"/>
+  </tile>
+  <tile id="45">
+   <image width="32" height="32" source="platformer_art/dirtHalf kopia.png"/>
+  </tile>
+  <tile id="46">
+   <image width="32" height="32" source="platformer_art/dirtHalfLeft kopia.png"/>
+  </tile>
+  <tile id="47">
+   <image width="32" height="32" source="platformer_art/dirtHalfMid kopia.png"/>
+  </tile>
+  <tile id="48">
+   <image width="32" height="32" source="platformer_art/dirtHalfRight kopia.png"/>
+  </tile>
+  <tile id="49">
+   <image width="32" height="32" source="platformer_art/dirtHillLeft kopia.png"/>
+  </tile>
+  <tile id="50">
+   <image width="32" height="32" source="platformer_art/dirtHillLeft2 kopia.png"/>
+  </tile>
+  <tile id="51">
+   <image width="32" height="32" source="platformer_art/dirtHillRight kopia.png"/>
+  </tile>
+  <tile id="52">
+   <image width="32" height="32" source="platformer_art/dirtHillRight2 kopia.png"/>
+  </tile>
+  <tile id="53">
+   <image width="32" height="115" source="platformer_art/dirtLedgeLeft kopia.png"/>
+  </tile>
+  <tile id="54">
+   <image width="32" height="115" source="platformer_art/dirtLedgeRight kopia.png"/>
+  </tile>
+  <tile id="55">
+   <image width="32" height="32" source="platformer_art/dirtLeft kopia.png"/>
+  </tile>
+  <tile id="56">
+   <image width="32" height="32" source="platformer_art/dirtMid kopia.png"/>
+  </tile>
+  <tile id="57">
+   <image width="32" height="32" source="platformer_art/dirtRight kopia.png"/>
+  </tile>
+  <tile id="58">
+   <image width="32" height="32" source="platformer_art/door_closedMid kopia.png"/>
+  </tile>
+  <tile id="59">
+   <image width="32" height="32" source="platformer_art/door_closedTop kopia.png"/>
+  </tile>
+  <tile id="60">
+   <image width="32" height="32" source="platformer_art/door_openMid kopia.png"/>
+  </tile>
+  <tile id="61">
+   <image width="32" height="32" source="platformer_art/door_openTop kopia.png"/>
+  </tile>
+  <tile id="62">
+   <image width="32" height="32" source="platformer_art/fence kopia.png"/>
+  </tile>
+  <tile id="63">
+   <image width="32" height="32" source="platformer_art/fenceBroken kopia.png"/>
+  </tile>
+  <tile id="64">
+   <image width="32" height="32" source="platformer_art/grass kopia.png"/>
+  </tile>
+  <tile id="65">
+   <image width="32" height="32" source="platformer_art/grassCenter kopia.png"/>
+  </tile>
+  <tile id="66">
+   <image width="32" height="32" source="platformer_art/grassCenter_rounded kopia.png"/>
+  </tile>
+  <tile id="67">
+   <image width="32" height="32" source="platformer_art/grassCliffLeft kopia.png"/>
+  </tile>
+  <tile id="68">
+   <image width="32" height="32" source="platformer_art/grassCliffLeftAlt kopia.png"/>
+  </tile>
+  <tile id="69">
+   <image width="32" height="32" source="platformer_art/grassCliffRight kopia.png"/>
+  </tile>
+  <tile id="70">
+   <image width="32" height="32" source="platformer_art/grassCliffRightAlt kopia.png"/>
+  </tile>
+  <tile id="71">
+   <image width="32" height="32" source="platformer_art/grassHalf kopia.png"/>
+  </tile>
+  <tile id="72">
+   <image width="32" height="32" source="platformer_art/grassHalfLeft kopia.png"/>
+  </tile>
+  <tile id="73">
+   <image width="32" height="32" source="platformer_art/grassHalfMid kopia.png"/>
+  </tile>
+  <tile id="74">
+   <image width="32" height="32" source="platformer_art/grassHalfRight kopia.png"/>
+  </tile>
+  <tile id="75">
+   <image width="32" height="32" source="platformer_art/grassHillLeft kopia.png"/>
+  </tile>
+  <tile id="76">
+   <image width="32" height="32" source="platformer_art/grassHillLeft2 kopia.png"/>
+  </tile>
+  <tile id="77">
+   <image width="32" height="32" source="platformer_art/grassHillRight kopia.png"/>
+  </tile>
+  <tile id="78">
+   <image width="32" height="32" source="platformer_art/grassHillRight2 kopia.png"/>
+  </tile>
+  <tile id="79">
+   <image width="32" height="154" source="platformer_art/grassLedgeLeft kopia.png"/>
+  </tile>
+  <tile id="80">
+   <image width="32" height="154" source="platformer_art/grassLedgeRight kopia.png"/>
+  </tile>
+  <tile id="81">
+   <image width="32" height="32" source="platformer_art/grassLeft kopia.png"/>
+  </tile>
+  <tile id="82">
+   <image width="32" height="32" source="platformer_art/grassMid kopia.png"/>
+  </tile>
+  <tile id="83">
+   <image width="32" height="32" source="platformer_art/grassRight kopia.png"/>
+  </tile>
+  <tile id="84">
+   <image width="32" height="97" source="platformer_art/hill_large kopia.png"/>
+  </tile>
+  <tile id="85">
+   <image width="32" height="97" source="platformer_art/hill_largeAlt kopia.png"/>
+  </tile>
+  <tile id="86">
+   <image width="32" height="71" source="platformer_art/hill_small kopia.png"/>
+  </tile>
+  <tile id="87">
+   <image width="32" height="71" source="platformer_art/hill_smallAlt kopia.png"/>
+  </tile>
+  <tile id="88">
+   <image width="32" height="32" source="platformer_art/ladder_mid kopia.png"/>
+  </tile>
+  <tile id="89">
+   <image width="32" height="32" source="platformer_art/ladder_top kopia.png"/>
+  </tile>
+  <tile id="90">
+   <image width="32" height="32" source="platformer_art/liquidLava kopia.png"/>
+  </tile>
+  <tile id="91">
+   <image width="32" height="32" source="platformer_art/liquidLavaTop kopia.png"/>
+  </tile>
+  <tile id="92">
+   <image width="32" height="32" source="platformer_art/liquidLavaTop_mid kopia.png"/>
+  </tile>
+  <tile id="93">
+   <image width="32" height="32" source="platformer_art/liquidWater kopia.png"/>
+  </tile>
+  <tile id="94">
+   <image width="32" height="32" source="platformer_art/liquidWaterTop kopia.png"/>
+  </tile>
+  <tile id="95">
+   <image width="32" height="32" source="platformer_art/liquidWaterTop_mid kopia.png"/>
+  </tile>
+  <tile id="96">
+   <image width="32" height="32" source="platformer_art/lock_blue kopia.png"/>
+  </tile>
+  <tile id="97">
+   <image width="32" height="32" source="platformer_art/lock_green kopia.png"/>
+  </tile>
+  <tile id="98">
+   <image width="32" height="32" source="platformer_art/lock_red kopia.png"/>
+  </tile>
+  <tile id="99">
+   <image width="32" height="32" source="platformer_art/lock_yellow kopia.png"/>
+  </tile>
+  <tile id="100">
+   <image width="32" height="32" source="platformer_art/rockHillLeft kopia.png"/>
+  </tile>
+  <tile id="101">
+   <image width="32" height="32" source="platformer_art/rockHillRight kopia.png"/>
+  </tile>
+  <tile id="102">
+   <image width="32" height="32" source="platformer_art/ropeAttached kopia.png"/>
+  </tile>
+  <tile id="103">
+   <image width="32" height="32" source="platformer_art/ropeHorizontal kopia.png"/>
+  </tile>
+  <tile id="104">
+   <image width="32" height="32" source="platformer_art/ropeVertical kopia.png"/>
+  </tile>
+  <tile id="105">
+   <image width="32" height="32" source="platformer_art/sand kopia.png"/>
+  </tile>
+  <tile id="106">
+   <image width="32" height="32" source="platformer_art/sandCenter kopia.png"/>
+  </tile>
+  <tile id="107">
+   <image width="32" height="32" source="platformer_art/sandCenter_rounded kopia.png"/>
+  </tile>
+  <tile id="108">
+   <image width="32" height="32" source="platformer_art/sandCliffLeft kopia.png"/>
+  </tile>
+  <tile id="109">
+   <image width="32" height="32" source="platformer_art/sandCliffLeftAlt kopia.png"/>
+  </tile>
+  <tile id="110">
+   <image width="32" height="32" source="platformer_art/sandCliffRight kopia.png"/>
+  </tile>
+  <tile id="111">
+   <image width="32" height="32" source="platformer_art/sandCliffRightAlt kopia.png"/>
+  </tile>
+  <tile id="112">
+   <image width="32" height="32" source="platformer_art/sandHalf kopia.png"/>
+  </tile>
+  <tile id="113">
+   <image width="32" height="32" source="platformer_art/sandHalfLeft kopia.png"/>
+  </tile>
+  <tile id="114">
+   <image width="32" height="32" source="platformer_art/sandHalfMid kopia.png"/>
+  </tile>
+  <tile id="115">
+   <image width="32" height="32" source="platformer_art/sandHalfRight kopia.png"/>
+  </tile>
+  <tile id="116">
+   <image width="32" height="32" source="platformer_art/sandHillLeft kopia.png"/>
+  </tile>
+  <tile id="117">
+   <image width="32" height="32" source="platformer_art/sandHillLeft2 kopia.png"/>
+  </tile>
+  <tile id="118">
+   <image width="32" height="32" source="platformer_art/sandHillRight kopia.png"/>
+  </tile>
+  <tile id="119">
+   <image width="32" height="32" source="platformer_art/sandHillRight2 kopia.png"/>
+  </tile>
+  <tile id="120">
+   <image width="32" height="115" source="platformer_art/sandLedgeLeft kopia.png"/>
+  </tile>
+  <tile id="121">
+   <image width="32" height="115" source="platformer_art/sandLedgeRight kopia.png"/>
+  </tile>
+  <tile id="122">
+   <image width="32" height="32" source="platformer_art/sandLeft kopia.png"/>
+  </tile>
+  <tile id="123">
+   <image width="32" height="32" source="platformer_art/sandMid kopia.png"/>
+  </tile>
+  <tile id="124">
+   <image width="32" height="32" source="platformer_art/sandRight kopia.png"/>
+  </tile>
+  <tile id="125">
+   <image width="32" height="32" source="platformer_art/sign kopia.png"/>
+  </tile>
+  <tile id="126">
+   <image width="32" height="32" source="platformer_art/signExit kopia.png"/>
+  </tile>
+  <tile id="127">
+   <image width="32" height="32" source="platformer_art/signLeft kopia.png"/>
+  </tile>
+  <tile id="128">
+   <image width="32" height="32" source="platformer_art/signRight kopia.png"/>
+  </tile>
+  <tile id="129">
+   <image width="32" height="32" source="platformer_art/snow kopia.png"/>
+  </tile>
+  <tile id="130">
+   <image width="32" height="32" source="platformer_art/snowCenter kopia.png"/>
+  </tile>
+  <tile id="131">
+   <image width="32" height="32" source="platformer_art/snowCenter_rounded kopia.png"/>
+  </tile>
+  <tile id="132">
+   <image width="32" height="32" source="platformer_art/snowCliffLeft kopia.png"/>
+  </tile>
+  <tile id="133">
+   <image width="32" height="32" source="platformer_art/snowCliffLeftAlt kopia.png"/>
+  </tile>
+  <tile id="134">
+   <image width="32" height="32" source="platformer_art/snowCliffRight kopia.png"/>
+  </tile>
+  <tile id="135">
+   <image width="32" height="32" source="platformer_art/snowCliffRightAlt kopia.png"/>
+  </tile>
+  <tile id="136">
+   <image width="32" height="32" source="platformer_art/snowHalf kopia.png"/>
+  </tile>
+  <tile id="137">
+   <image width="32" height="32" source="platformer_art/snowHalfLeft kopia.png"/>
+  </tile>
+  <tile id="138">
+   <image width="32" height="32" source="platformer_art/snowHalfMid kopia.png"/>
+  </tile>
+  <tile id="139">
+   <image width="32" height="32" source="platformer_art/snowHalfRight kopia.png"/>
+  </tile>
+  <tile id="140">
+   <image width="32" height="32" source="platformer_art/snowHillLeft kopia.png"/>
+  </tile>
+  <tile id="141">
+   <image width="32" height="32" source="platformer_art/snowHillLeft2 kopia.png"/>
+  </tile>
+  <tile id="142">
+   <image width="32" height="32" source="platformer_art/snowHillRight kopia.png"/>
+  </tile>
+  <tile id="143">
+   <image width="32" height="32" source="platformer_art/snowHillRight2 kopia.png"/>
+  </tile>
+  <tile id="144">
+   <image width="32" height="115" source="platformer_art/snowLedgeLeft kopia.png"/>
+  </tile>
+  <tile id="145">
+   <image width="32" height="115" source="platformer_art/snowLedgeRight kopia.png"/>
+  </tile>
+  <tile id="146">
+   <image width="32" height="32" source="platformer_art/snowLeft kopia.png"/>
+  </tile>
+  <tile id="147">
+   <image width="32" height="32" source="platformer_art/snowMid kopia.png"/>
+  </tile>
+  <tile id="148">
+   <image width="32" height="32" source="platformer_art/snowRight kopia.png"/>
+  </tile>
+  <tile id="149">
+   <image width="32" height="32" source="platformer_art/stone kopia.png"/>
+  </tile>
+  <tile id="150">
+   <image width="32" height="32" source="platformer_art/stoneCenter kopia.png"/>
+  </tile>
+  <tile id="151">
+   <image width="32" height="32" source="platformer_art/stoneCenter_rounded kopia.png"/>
+  </tile>
+  <tile id="152">
+   <image width="32" height="32" source="platformer_art/stoneCliffLeft kopia.png"/>
+  </tile>
+  <tile id="153">
+   <image width="32" height="32" source="platformer_art/stoneCliffLeftAlt kopia.png"/>
+  </tile>
+  <tile id="154">
+   <image width="32" height="32" source="platformer_art/stoneCliffRight kopia.png"/>
+  </tile>
+  <tile id="155">
+   <image width="32" height="32" source="platformer_art/stoneCliffRightAlt kopia.png"/>
+  </tile>
+  <tile id="156">
+   <image width="32" height="32" source="platformer_art/stoneHalf kopia.png"/>
+  </tile>
+  <tile id="157">
+   <image width="32" height="32" source="platformer_art/stoneHalfLeft kopia.png"/>
+  </tile>
+  <tile id="158">
+   <image width="32" height="32" source="platformer_art/stoneHalfMid kopia.png"/>
+  </tile>
+  <tile id="159">
+   <image width="32" height="32" source="platformer_art/stoneHalfRight kopia.png"/>
+  </tile>
+  <tile id="160">
+   <image width="32" height="32" source="platformer_art/stoneHillLeft2 kopia.png"/>
+  </tile>
+  <tile id="161">
+   <image width="32" height="32" source="platformer_art/stoneHillRight2 kopia.png"/>
+  </tile>
+  <tile id="162">
+   <image width="32" height="154" source="platformer_art/stoneLedgeLeft kopia.png"/>
+  </tile>
+  <tile id="163">
+   <image width="32" height="154" source="platformer_art/stoneLedgeRight kopia.png"/>
+  </tile>
+  <tile id="164">
+   <image width="32" height="32" source="platformer_art/stoneLeft kopia.png"/>
+  </tile>
+  <tile id="165">
+   <image width="32" height="32" source="platformer_art/stoneMid kopia.png"/>
+  </tile>
+  <tile id="166">
+   <image width="32" height="32" source="platformer_art/stoneRight kopia.png"/>
+  </tile>
+  <tile id="167">
+   <image width="32" height="32" source="platformer_art/stoneWall kopia.png"/>
+  </tile>
+  <tile id="168">
+   <image width="32" height="32" source="platformer_art/tochLit kopia.png"/>
+  </tile>
+  <tile id="169">
+   <image width="32" height="32" source="platformer_art/tochLit2 kopia.png"/>
+  </tile>
+  <tile id="170">
+   <image width="32" height="32" source="platformer_art/torch kopia.png"/>
+  </tile>
+  <tile id="171">
+   <image width="32" height="32" source="platformer_art/window kopia.png"/>
+  </tile>
+  <tile id="172">
+   <image width="32" height="32" source="platformer_art/white.png"/>
+  </tile>
+  <tile id="173">
+   <image width="32" height="32" source="platformer_art/waterfall.png"/>
+  </tile>
+ </tileset>
+ <layer name="Tile Layer 1" width="300" height="20">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147483666,2147483665,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147483666,2147483665,0,0,0,0,0,0,0,0,0,0,0,0,0,2147483666,2147483665,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147483666,2147483665,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,18,0,0,0,0,0,2147483666,2147483665,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147483666,2147483665,0,0,0,0,0,0,0,0,0,0,0,2147483666,2147483665,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147483666,2147483665,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,7,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,7,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,122,136,273,273,273,273,273,136,124,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,7,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,11,11,11,11,11,11,11,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,141,273,273,273,273,273,141,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,7,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,141,273,273,273,273,273,141,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,7,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,251,273,251,268,0,0,0,251,0,0,252,273,252,252,0,0,0,252,0,0,141,273,273,273,273,273,141,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,12,7,7,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,251,273,251,268,0,0,0,251,0,0,252,273,252,252,0,0,0,252,0,0,141,273,273,273,273,273,141,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,7,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,251,273,251,268,0,0,0,251,0,0,252,273,252,252,0,0,0,252,0,0,141,273,273,273,273,273,141,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,7,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,7,7,0,0,0,0,0,0,0,0,0,0,0,0,0,251,273,251,268,0,0,0,251,0,0,252,273,252,252,0,0,0,252,0,0,141,273,273,273,273,273,141,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,7,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14,0,0,0,0,0,0,7,7,7,7,7,0,0,13,0,0,0,0,0,0,0,0,0,251,273,268,268,0,0,0,251,0,0,252,273,252,252,0,0,0,252,0,0,141,273,273,273,273,273,141,0,0,0,0,0,0,0,0,0,0,0,0,14,14,14,14,14,14,14,14,14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14,14,14,14,14,14,14,14,14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14,14,14,14,14,14,14,14,14,14,14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14,14,14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14,14,14,14,14,14,14,14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14,14,14,14,14,14,14,14,14,14,14,14,0,0,7,7,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,273,273,273,273,273,273,273,3,3,3,3,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,273,273,273,273,273,273,273,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9
+</data>
+ </layer>
+ <layer name="Tile Layer 2" width="300" height="20">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,0,0,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,0,0,26,26,26,26,26,26,26,26,26,26,26,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147483674,2147483674,2147483674,2147483674,0,0,0,1073741850,1073741850,1073741850,1073741850,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147483674,2147483674,2147483674,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147483674,2147483674,2147483674,0,0,0,0,0,0,0,0,0,0,0,0,2147483674,2147483674,2147483674,0,0,0,0,0,0,0,0,0,0,0,0,0,1073741850,1073741850,1073741850,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26,26,26,26,26,26,26,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3221225498,3221225498,3221225498,3221225498,0,0,0,26,26,26,26,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1073741850,1073741850,1073741850,1073741850,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147483674,2147483674,2147483674,2147483674,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26,26,26,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147483674,2147483674,2147483674,0,0,0,0,0,0,0,0,0,0,0,0,0,1073741850,1073741850,1073741850,0,0,0,0,0,2147483674,2147483674,2147483674,2147483674,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26,26,26,26,26,26,26,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3221225498,3221225498,3221225498,0,0,0,274,274,274,274,274,0,0,0,0,0,26,26,26,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147483674,2147483674,2147483674,0,0,0,0,0,0,0,0,0,0,0,0,0,1073741850,1073741850,1073741850,0,0,0,0,0,0,0,0,0,0,0,0,1073741850,1073741850,1073741850,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3221225498,3221225498,3221225498,3221225498,0,0,0,0,0,0,0,0,274,274,274,274,274,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26,26,26,26,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,274,274,274,274,274,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147483674,2147483674,2147483674,2147483674,0,0,0,1073741850,1073741850,1073741850,1073741850,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3221225498,3221225498,3221225498,0,0,0,0,0,0,0,0,0,0,0,0,0,26,26,26,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,29,0,0,29,0,29,0,0,0,0,0,274,274,274,274,274,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147483674,2147483674,2147483674,2147483674,0,0,0,1073741850,1073741850,1073741850,1073741850,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3221225498,3221225498,3221225498,0,0,35,0,0,35,0,35,0,0,0,0,0,274,274,274,274,274,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,41,0,0,41,0,41,0,0,0,0,0,274,274,274,274,274,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3221225498,3221225498,3221225498,3221225498,0,0,0,26,26,26,26,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,47,0,0,47,0,47,0,0,0,0,0,274,274,274,274,274,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,53,0,0,53,0,53,0,0,0,0,0,274,274,274,274,274,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,274,274,274,274,274,274,274,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,274,274,274,274,274,274,274,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup name="Object Layer 1">
+  <object id="1" x="0" y="576" width="9600" height="32">
+   <properties>
+    <property name="name" value="Solid"/>
+   </properties>
+  </object>
+  <object id="2" x="576" y="448" width="64" height="32">
+   <properties>
+    <property name="name" value="Solid"/>
+   </properties>
+  </object>
+  <object id="3" x="736" y="544" width="160" height="32">
+   <properties>
+    <property name="name" value="Solid"/>
+   </properties>
+  </object>
+  <object id="4" x="768" y="512" width="96" height="32">
+   <properties>
+    <property name="name" value="Solid"/>
+   </properties>
+  </object>
+  <object id="5" x="800" y="480" width="32" height="32">
+   <properties>
+    <property name="name" value="Solid"/>
+   </properties>
+  </object>
+  <object id="8" x="480" y="512" width="32" height="32">
+   <properties>
+    <property name="name" value="start"/>
+   </properties>
+  </object>
+  <object id="14" gid="19" x="832" y="448" width="32" height="32"/>
+  <object id="15" gid="19" x="576" y="416" width="32" height="32"/>
+  <object id="16" gid="19" x="800" y="448" width="32" height="32"/>
+  <object id="27" gid="21" x="800" y="384" width="32" height="32"/>
+  <object id="30" gid="19" x="768" y="448" width="32" height="32"/>
+  <object id="31" gid="19" x="608" y="416" width="32" height="32"/>
+  <object id="34" gid="22" x="384" y="576" width="32" height="32"/>
+  <object id="49" gid="24" x="512" y="288" width="32" height="32"/>
+  <object id="64" gid="19" x="672" y="288" width="32" height="32"/>
+  <object id="65" gid="19" x="608" y="544" width="32" height="32"/>
+  <object id="66" gid="19" x="576" y="544" width="32" height="32"/>
+  <object id="67" gid="19" x="576" y="256" width="32" height="32"/>
+  <object id="68" gid="19" x="608" y="256" width="32" height="32"/>
+  <object id="206" gid="19" x="549" y="196" width="32" height="32"/>
+  <object id="262" gid="22" x="8927.98" y="575.939" width="32" height="32"/>
+  <object id="266" gid="22" x="8991.67" y="415" width="32" height="32"/>
+  <object id="267" x="9057" y="254.667" width="94.8182" height="320.788">
+   <properties>
+    <property name="name" value="Solid"/>
+   </properties>
+  </object>
+  <object id="268" x="1024.5" y="351" width="287.75" height="16.5">
+   <properties>
+    <property name="enemyName" value="Enemy"/>
+    <property name="name" value="Solid"/>
+   </properties>
+  </object>
+  <object id="269" x="8992.33" y="415.25" width="64.3333" height="16.75">
+   <properties>
+    <property name="name" value="Solid"/>
+   </properties>
+  </object>
+  <object id="273" x="768" y="240" width="224" height="16">
+   <properties>
+    <property name="name" value="Platform"/>
+   </properties>
+  </object>
+  <object id="280" x="513.167" y="336.333" width="223.667" height="16">
+   <properties>
+    <property name="name" value="Platform"/>
+   </properties>
+  </object>
+  <object id="282" x="928" y="53" width="4000" height="16">
+   <properties>
+    <property name="name" value="Platform"/>
+   </properties>
+  </object>
+  <object id="283" x="4992" y="53" width="4000" height="16">
+   <properties>
+    <property name="name" value="Platform"/>
+   </properties>
+  </object>
+  <object id="284" x="9056" y="53" width="352" height="16">
+   <properties>
+    <property name="name" value="Platform"/>
+   </properties>
+  </object>
+  <object id="286" gid="25" x="9120" y="96" width="32" height="32"/>
+  <object id="290" gid="25" x="9120" y="128" width="32" height="32"/>
+  <object id="291" gid="25" x="9120" y="160" width="32" height="32"/>
+  <object id="292" gid="25" x="9120" y="192" width="32" height="32"/>
+  <object id="293" gid="25" x="9120" y="224" width="32" height="32"/>
+  <object id="294" gid="25" x="9120" y="256" width="32" height="32"/>
+  <object id="295" gid="20" x="9408" y="576" width="32" height="32"/>
+  <object id="299" gid="19" x="384" y="64" width="32" height="32"/>
+  <object id="300" gid="19" x="384" y="96" width="32" height="32"/>
+  <object id="301" gid="19" x="384" y="128" width="32" height="32"/>
+  <object id="302" gid="19" x="384" y="160" width="32" height="32"/>
+  <object id="303" gid="19" x="384" y="192" width="32" height="32"/>
+  <object id="304" gid="19" x="384" y="224" width="32" height="32"/>
+  <object id="305" gid="19" x="384" y="256" width="32" height="32"/>
+  <object id="306" gid="19" x="384" y="288" width="32" height="32"/>
+  <object id="307" gid="19" x="384" y="320" width="32" height="32"/>
+  <object id="308" gid="19" x="384" y="352" width="32" height="32"/>
+  <object id="309" gid="19" x="384" y="384" width="32" height="32"/>
+  <object id="310" gid="19" x="384" y="416" width="32" height="32"/>
+  <object id="341" gid="28" x="1280" y="352" width="32" height="32"/>
+  <object id="347" x="1536" y="480" width="94.6667" height="15" rotation="-180">
+   <properties>
+    <property name="name" value="Solid"/>
+   </properties>
+  </object>
+  <object id="348" x="1568.67" y="368" width="128" height="16">
+   <properties>
+    <property name="name" value="Platform"/>
+   </properties>
+  </object>
+  <object id="349" x="1760" y="335.333" width="94.6667" height="15">
+   <properties>
+    <property name="name" value="Platform"/>
+   </properties>
+  </object>
+  <object id="350" x="1888.67" y="240" width="128" height="16">
+   <properties>
+    <property name="name" value="Platform"/>
+   </properties>
+  </object>
+  <object id="351" x="2368.67" y="350.333" width="94.6667" height="15" rotation="180">
+   <properties>
+    <property name="name" value="Platform"/>
+   </properties>
+  </object>
+  <object id="352" x="2240" y="256" width="128" height="16" rotation="180">
+   <properties>
+    <property name="name" value="Platform"/>
+   </properties>
+  </object>
+  <object id="353" x="2432" y="176" width="94.6667" height="15">
+   <properties>
+    <property name="name" value="Platform"/>
+   </properties>
+  </object>
+  <object id="354" x="2560.67" y="270.333" width="128" height="16">
+   <properties>
+    <property name="name" value="Platform"/>
+   </properties>
+  </object>
+  <object id="355" x="2752" y="304" width="94.6667" height="15">
+   <properties>
+    <property name="name" value="Platform"/>
+   </properties>
+  </object>
+  <object id="356" x="2880.67" y="398.333" width="128" height="16">
+   <properties>
+    <property name="name" value="Platform"/>
+   </properties>
+  </object>
+  <object id="357" x="3360.67" y="319" width="94.6667" height="15" rotation="-180">
+   <properties>
+    <property name="name" value="Platform"/>
+   </properties>
+  </object>
+  <object id="358" x="3232" y="414.333" width="128" height="16" rotation="-180">
+   <properties>
+    <property name="name" value="Platform"/>
+   </properties>
+  </object>
+  <object id="359" x="3392" y="208" width="94.6667" height="15">
+   <properties>
+    <property name="name" value="Platform"/>
+   </properties>
+  </object>
+  <object id="360" x="3520.67" y="302.333" width="128" height="16">
+   <properties>
+    <property name="name" value="Platform"/>
+   </properties>
+  </object>
+  <object id="361" x="3712" y="336" width="94.6667" height="15">
+   <properties>
+    <property name="name" value="Platform"/>
+   </properties>
+  </object>
+  <object id="362" x="3840.67" y="430.333" width="128" height="16">
+   <properties>
+    <property name="name" value="Platform"/>
+   </properties>
+  </object>
+  <object id="363" x="4320.67" y="351" width="94.6667" height="15" rotation="-180">
+   <properties>
+    <property name="name" value="Platform"/>
+   </properties>
+  </object>
+  <object id="364" x="4192" y="446.333" width="128" height="16" rotation="-180">
+   <properties>
+    <property name="name" value="Platform"/>
+   </properties>
+  </object>
+  <object id="365" x="4800.67" y="350.333" width="94.6667" height="15" rotation="-180">
+   <properties>
+    <property name="name" value="Platform"/>
+   </properties>
+  </object>
+  <object id="366" x="4672" y="256" width="128" height="16" rotation="-180">
+   <properties>
+    <property name="name" value="Platform"/>
+   </properties>
+  </object>
+  <object id="367" x="4480.67" y="222.333" width="94.6667" height="15" rotation="-180">
+   <properties>
+    <property name="name" value="Platform"/>
+   </properties>
+  </object>
+  <object id="368" x="4224" y="112" width="128" height="16">
+   <properties>
+    <property name="name" value="Platform"/>
+   </properties>
+  </object>
+  <object id="369" x="3872" y="207.333" width="94.6667" height="15">
+   <properties>
+    <property name="name" value="Platform"/>
+   </properties>
+  </object>
+  <object id="370" x="4000.67" y="112" width="128" height="16">
+   <properties>
+    <property name="name" value="Platform"/>
+   </properties>
+  </object>
+  <object id="371" x="5280.67" y="288" width="94.6667" height="15" rotation="180">
+   <properties>
+    <property name="name" value="Platform"/>
+   </properties>
+  </object>
+  <object id="372" x="5152" y="383.333" width="128" height="16" rotation="180">
+   <properties>
+    <property name="name" value="Platform"/>
+   </properties>
+  </object>
+  <object id="373" x="4960.67" y="416" width="94.6667" height="15" rotation="180">
+   <properties>
+    <property name="name" value="Platform"/>
+   </properties>
+  </object>
+  <object id="374" x="4832" y="511.333" width="128" height="16" rotation="180">
+   <properties>
+    <property name="name" value="Platform"/>
+   </properties>
+  </object>
+  <object id="375" x="4352" y="401" width="94.6667" height="15" rotation="360">
+   <properties>
+    <property name="name" value="Platform"/>
+   </properties>
+  </object>
+  <object id="376" x="4480.67" y="495.333" width="128" height="16" rotation="360">
+   <properties>
+    <property name="name" value="Platform"/>
+   </properties>
+  </object>
+  <object id="507" x="1888" y="320" width="288" height="32">
+   <properties>
+    <property name="name" value="Solid"/>
+   </properties>
+  </object>
+  <object id="508" x="1920" y="352" width="224" height="256">
+   <properties>
+    <property name="name" value="Solid"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Animation">
+  <object id="466" gid="29" x="1984" y="352" width="96" height="32"/>
+  <object id="467" gid="35" x="1984" y="384" width="96" height="32"/>
+  <object id="468" gid="41" x="1984" y="416" width="96" height="32"/>
+  <object id="469" gid="47" x="1984" y="448" width="96" height="32"/>
+  <object id="470" gid="35" x="1984" y="480" width="96" height="32"/>
+  <object id="471" gid="41" x="1984" y="512" width="96" height="32"/>
+  <object id="472" gid="47" x="1984" y="544" width="96" height="32"/>
+  <object id="473" gid="53" x="1984" y="576" width="96" height="32"/>
+  <object id="474" gid="29" x="2048" y="352" width="96" height="32"/>
+  <object id="475" gid="29" x="1920" y="352" width="96" height="32"/>
+  <object id="476" gid="35" x="1920" y="384" width="96" height="32"/>
+  <object id="477" gid="35" x="2048" y="384" width="96" height="32"/>
+  <object id="478" gid="41" x="1920" y="416" width="96" height="32"/>
+  <object id="479" gid="41" x="2048" y="416" width="96" height="32"/>
+  <object id="480" gid="47" x="1920" y="448" width="96" height="32"/>
+  <object id="481" gid="47" x="2048" y="448" width="96" height="32"/>
+  <object id="482" gid="35" x="1920" y="480" width="96" height="32"/>
+  <object id="483" gid="35" x="2048" y="480" width="96" height="32"/>
+  <object id="484" gid="41" x="1920" y="512" width="96" height="32"/>
+  <object id="485" gid="41" x="2048" y="512" width="96" height="32"/>
+  <object id="486" gid="47" x="1920" y="544" width="96" height="32"/>
+  <object id="487" gid="47" x="2048" y="544" width="96" height="32"/>
+  <object id="488" gid="53" x="1920" y="576" width="96" height="32"/>
+  <object id="489" gid="53" x="2048" y="576" width="96" height="32"/>
+  <object id="500" gid="59" x="1920" y="608" width="96" height="32"/>
+  <object id="502" gid="59" x="1984" y="608" width="96" height="32"/>
+  <object id="503" gid="59" x="2048" y="608" width="96" height="32"/>
+  <object id="511" gid="29" x="1280" y="448" width="96" height="32"/>
+  <object id="512" gid="29" x="1376" y="448" width="96" height="32"/>
+  <object id="513" gid="29" x="1440" y="448" width="96" height="32"/>
+  <object id="514" gid="35" x="1280" y="480" width="96" height="32"/>
+  <object id="515" gid="35" x="1376" y="480" width="96" height="32"/>
+  <object id="516" gid="35" x="1440" y="480" width="96" height="32"/>
+  <object id="517" gid="41" x="1280" y="512" width="96" height="32"/>
+  <object id="518" gid="41" x="1376" y="512" width="96" height="32"/>
+  <object id="519" gid="41" x="1440" y="512" width="96" height="32"/>
+  <object id="520" gid="47" x="1280" y="544" width="96" height="32"/>
+  <object id="521" gid="47" x="1376" y="544" width="96" height="32"/>
+  <object id="522" gid="47" x="1440" y="544" width="96" height="32"/>
+  <object id="523" gid="53" x="1280" y="576" width="96" height="32"/>
+  <object id="524" gid="53" x="1376" y="576" width="96" height="32"/>
+  <object id="525" gid="53" x="1440" y="576" width="96" height="32"/>
+ </objectgroup>
+</map>
